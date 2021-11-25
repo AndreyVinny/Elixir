@@ -1,1 +1,2 @@
-@@include('start.js')
+@@include('hum.js')
+@@include('paralax.js')
