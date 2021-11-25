@@ -1,0 +1,58 @@
+$color_text_main: #000;
+$color_spec_first: #fff;
+$color_text_spec: #FF4A32;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+@mixin flex ($fd, $jc, $ai, $fw) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+}
+
+
+// @include flex (row, center, center, nowrap);
+// ----animation----
+// .header_main_text {
+//   opacity: 0;
+//   transform: translate(0px, 50%);
+//   transition: all 1s ease;
+//    &._active {
+//      opacity: 1;
+//      transform: translate(0px, 0px);
+//  }
+// ----active----
+// .nav_menu {
+// transition: all 1s ease-out;  
+//     &.active {
+//         opacity: 1;
+// ----svg----
+// <svg class="icon_top" width='50px' heignt=50px>
+//   <use href='./img/icon/symbol-defs.svg#icon-cart'></use>
+// </svg>
+
+
+// gulp deploy
+
