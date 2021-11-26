@@ -1,0 +1,47 @@
+.about {
+    padding: 50px 0px;
+    h2 {
+        font-size: 44px;
+        padding-left: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+.about_cont {
+    @include flex (row, space-between, flex-start, nowrap);
+}
+
+.about_block {
+    width: 48%;
+    p {
+        margin-top: 25px;
+        letter-spacing: 2px;
+        line-height: 20px;
+    }
+    img {
+        min-width: 300px;
+        min-height: 380px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: $tablet) {
+    .about {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .about_cont {
+    @include flex (column, space-between, flex-start, nowrap);
+    }
+
+    .about_block {
+        width: 100%;
+        p {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+}
