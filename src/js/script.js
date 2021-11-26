@@ -1,2 +1,3 @@
-@@include('hum.js')
-@@include('paralax.js')
+@@include('hum.js');
+@@include('paralax.js');
+@@include('slider.js');

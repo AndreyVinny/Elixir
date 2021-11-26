@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -344,10 +343,12 @@ template {
 
 :root {
   --color-text-1:#fff;
+  --color-text-2:#78A328;
   --color-spec-1:#c5f682;
   --color-spec-2:#0c7011;
   --color-spec-3:#cefa7c;
   --color-spec-4: rgba(224, 247, 195, 0.8);
+  --color-spec-5:#A3BB75;
 }
 
 * {
@@ -548,72 +549,6 @@ a {
      object-fit: cover;
 }
 
-.swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.swiper-slide {
-  width: 100%;
-  min-width: 320px;
-  background-color: var(--color-spec-3);
-  border-right: 1px solid var(--color-spec-2);
-  border-left: 1px solid var(--color-spec-2);
-  text-align: center;
-}
-
-.season_main {
-  overflow: hidden;
-}
-
-.swiper_blox {
-  display: inline-block;
-  list-style: none;
-  text-decoration: none;
-}
-.swiper_blox:hover {
-  background-color: var(--color-spec-2);
-  color: var(--color-text-1);
-}
-.swiper_blox .num {
-  text-align: right;
-  padding: 15px;
-  font-size: 22px;
-  color: var(--color-text-1);
-}
-
-.swiper_blox_cont {
-  padding: 20px 35px 155px;
-}
-.swiper_blox_cont h3 {
-  text-transform: uppercase;
-  color: var(--color-text-1);
-  font-size: 28px;
-}
-.swiper_blox_cont h3::after {
-  content: "";
-  display: block;
-  width: 220px;
-  margin: 0 auto;
-  margin-top: 15px;
-  height: 1px;
-  background-color: var(--color-text-1);
-}
-
-.swiper-slide:after {
-  content: "ᐳ";
-  border: 1px solid var(--color-text-1);
-  border-radius: 50px;
-  padding: 1px 5px;
-  color: var(--color-text-1);
-  font-size: 14px;
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  z-index: 10000;
-}
-
 @media (max-width: 1440px) {
   #text {
     font-size: 35vw;
@@ -715,5 +650,141 @@ a {
 
   #text {
     font-size: 47vw;
+  }
+}
+.services {
+  height: 1000px;
+}
+
+.services_main {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-slide {
+  width: 100%;
+  min-width: 228px;
+  background-color: var(--color-spec-3);
+  border: 1px solid var(--color-spec-5);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.swiper-slide:hover {
+  background-color: var(--color-spec-5);
+}
+
+.service_main {
+  overflow: hidden;
+}
+
+.swiper_blox {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-text-1);
+}
+.swiper_blox .num {
+  text-align: right;
+  padding: 15px;
+  font-size: 22px;
+  color: var(--color-text-2);
+}
+
+.swiper_blox_cont {
+  padding: 20px 15px 155px;
+}
+.swiper_blox_cont h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.swiper_blox_cont h3::after {
+  content: "";
+  display: block;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 15px;
+  height: 1px;
+  background-color: var(--color-text-1);
+}
+.swiper_blox_cont .swiper_blox_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-top: 25px;
+}
+.swiper_blox_cont .swiper_blox_items li {
+  list-style: none;
+  padding: 3px;
+}
+
+.swiper_box_btn {
+  color: var(--color-text-2);
+  border: 1px solid var(--color-text-2);
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-text-2);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-text-2);
+}
+
+@media (max-width: 1440px) {
+  .swiper-slide {
+    min-width: 225px;
+  }
+
+  .swiper_blox_cont {
+    padding: 20px 15px 155px;
+  }
+  .swiper_blox_cont h3 {
+    font-size: 20px;
+  }
+  .swiper_blox_cont h3::after {
+    width: 200px;
+  }
+  .swiper_blox_cont .swiper_blox_items {
+    padding-top: 20px;
+  }
+  .swiper_blox_cont .swiper_blox_items li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .swiper-slide {
+    min-width: 240px;
+  }
+
+  .swiper_blox_cont {
+    padding: 20px 15px 155px;
+  }
+  .swiper_blox_cont h3 {
+    font-size: 22px;
   }
 }
