@@ -41,3 +41,39 @@ const swiper = new Swiper('.services-slider', {
     },
   },
 })
+
+const swiper_master = new Swiper('.master-slider', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+  },
+  mousewheel: {
+      sensitivity: 1,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    720: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+})

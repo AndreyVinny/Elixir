@@ -662,7 +662,7 @@ a {
   display: flex;
 }
 
-.swiper-slide {
+.services-swiper-slide {
   width: 100%;
   min-width: 228px;
   background-color: var(--color-spec-3);
@@ -671,7 +671,7 @@ a {
   position: relative;
   z-index: 10;
 }
-.swiper-slide:hover {
+.services-swiper-slide:hover {
   background-color: var(--color-spec-5);
 }
 
@@ -855,5 +855,164 @@ a {
   .about_block p {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+}
+.master {
+  background-color: #cefa7c;
+  padding: 50px 0px 25px;
+  padding-bottom: 150px;
+}
+.master h2 {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 25px;
+  color: var(--color-text-1);
+}
+
+.master_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: auto;
+}
+
+.master-swiper-slide {
+  max-width: 400px;
+  height: 500px;
+  background: #ffffff;
+  -webkit-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+  color: #000000;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.master-swiper-slide img {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  top: 10px;
+  left: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.master-swiper-slide:hover {
+  height: auto;
+}
+
+.master-swiper-slide:hover img {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.card-name {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 28px;
+}
+.card-name h3 {
+  letter-spacing: 2px;
+}
+.card-name span {
+  font-size: 16px;
+  margin: 5px 10px;
+  display: block;
+}
+
+.details {
+  visibility: hidden;
+  font-size: 19px;
+  opacity: 0;
+  position: relative;
+  top: -150px;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  padding: 15px 15px 40px;
+  letter-spacing: 2px;
+  line-height: 22px;
+}
+
+.master-swiper-slide:hover .details {
+  visibility: visible;
+  opacity: 1;
+  top: 0px;
+}
+
+@media (max-width: 1440px) {
+  .master-swiper-slide {
+    max-width: 260px;
+    height: 350px;
+  }
+
+  .master-swiper-slide img {
+    width: 92%;
+  }
+
+  .card-name {
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .card-name span {
+    font-size: 15px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .master-swiper-slide {
+    max-width: 335px;
+    height: 430px;
+  }
+
+  .master-swiper-slide img {
+    width: 94%;
+  }
+
+  .details {
+    font-size: 18px;
+  }
+}
+@media (max-width: 720px) {
+  .master-swiper-slide {
+    max-width: 390px;
+    height: 500px;
+  }
+
+  .master-swiper-slide img {
+    width: 94%;
+  }
+
+  .details {
+    font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .master-swiper-slide {
+    height: 420px;
+  }
+
+  .master-swiper-slide img {
+    width: 93%;
   }
 }
