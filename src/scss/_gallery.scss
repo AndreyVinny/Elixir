@@ -1,0 +1,15 @@
+.gallery {
+    background-color: var(--color-spec-3);
+    padding-bottom: 100px;
+    h2 {
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 25px;
+        color: var(--color-text-1);
+    }
+}
+
+.gallery-swiper-slide {
+    max-width: 465px;
+    height: auto;
+}

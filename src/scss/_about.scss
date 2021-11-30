@@ -1,14 +1,31 @@
 .about {
-    padding: 50px 0px;
     h2 {
         font-size: 44px;
         padding-left: 25px;
         margin-bottom: 25px;
     }
+    &::before {
+        content: '';
+        display: block;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(206,250,124,1) 100%);
+        height: 150px;
+        width: 100%;
+    }
+    &::after {
+        content: '';
+        display: block;
+        background: rgb(255,255,255);
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(206,250,124,1) 100%);
+        height: 150px;
+        width: 100%;
+    }
 }
 
 .about_cont {
     @include flex (row, space-between, flex-start, nowrap);
+    padding: 50px 0px;
 }
 
 .about_block {

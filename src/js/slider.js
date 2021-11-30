@@ -1,10 +1,10 @@
 const swiper = new Swiper('.services-slider', {
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-service',
+    prevEl: '.swiper-button-prev-service',
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-service',
     clickable: true,
   },
   keyboard: {
@@ -40,15 +40,11 @@ const swiper = new Swiper('.services-slider', {
       spaceBetween: 0,
     },
   },
-})
+});
 
 const swiper_master = new Swiper('.master-slider', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-master',
     clickable: true,
   },
   keyboard: {
@@ -73,6 +69,51 @@ const swiper_master = new Swiper('.master-slider', {
     },
     900: {
       slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+});
+
+
+const swiper_gallery = new Swiper('.gallery-slider', {
+  navigation: {
+    nextEl: '.swiper-button-next-gallery',
+    prevEl: '.swiper-button-prev-gallery',
+  },
+  pagination: {
+    el: '.swiper-pagination-gallery',
+    clickable: true,
+  },
+  keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+  },
+  mousewheel: {
+      sensitivity: 1,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    720: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1720: {
+      slidesPerView: 4,
       spaceBetween: 10,
     },
   },
