@@ -1151,3 +1151,99 @@ a {
   overflow: hidden;
   border-radius: 0px 0px 5px 5px;
 }
+
+.counter h2 {
+  text-align: center;
+  font-size: 44px;
+  padding-left: 25px;
+  margin-bottom: 65px;
+}
+.counter::before {
+  content: "";
+  display: block;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#cefa7c));
+  background: -o-linear-gradient(bottom, white 0%, #cefa7c 100%);
+  background: linear-gradient(0deg, white 0%, #cefa7c 100%);
+  height: 150px;
+  width: 100%;
+}
+.counter::after {
+  content: "";
+  display: block;
+  background: white;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cefa7c));
+  background: -o-linear-gradient(top, white 0%, #cefa7c 100%);
+  background: linear-gradient(180deg, white 0%, #cefa7c 100%);
+  height: 150px;
+  width: 100%;
+}
+
+.counter_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.counter_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 150px;
+  font-size: 30px;
+  text-align: center;
+}
+.counter_item span {
+  display: inline-block;
+  padding: 15px 0px;
+  font-size: 70px;
+}
+
+@media (max-width: 720px) {
+  .counter_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .counter_item {
+    margin-bottom: 75px;
+  }
+}
