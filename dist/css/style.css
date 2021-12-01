@@ -449,6 +449,7 @@ a {
 
 .nav_item_link {
   color: var(--color-text-1);
+  text-shadow: 1px 1px 1px #000;
   font-weight: bold;
 }
 
