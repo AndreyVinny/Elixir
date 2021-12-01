@@ -3,5 +3,7 @@
 @@include('slider.js');
 @@include('questionAccordion.js');
 @@include('counter.js');
+@@include('animation.js');
+
 
 

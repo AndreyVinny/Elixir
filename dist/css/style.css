@@ -612,6 +612,7 @@ h2 {
   .nav_item_link {
     font-size: 15px;
     color: var(--color-spec-2);
+    text-shadow: none;
   }
 
   .ham_menu {
@@ -881,6 +882,38 @@ h2 {
   display: none;
 }
 
+.about_text {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 0px);
+      -ms-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.about_text._active {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.about_img {
+  opacity: 0;
+  -webkit-transform: translate(50%, 0px);
+      -ms-transform: translate(50%, 0px);
+          transform: translate(50%, 0px);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.about_img._active {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
 @media (max-width: 900px) {
   .about_img_hidden {
     display: block;
@@ -952,6 +985,19 @@ h2 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 550px;
+  opacity: 0;
+  -webkit-transform: translate(0px, 50%);
+      -ms-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.master_cont._active {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 .master-wrapper {
@@ -1269,6 +1315,19 @@ h2 {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  opacity: 0;
+  -webkit-transform: translate(0px, 50%);
+      -ms-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.counter_cont._active {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 .counter_item {

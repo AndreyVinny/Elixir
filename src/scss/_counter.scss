@@ -26,6 +26,13 @@
 
 .counter_cont {
     @include flex (row, space-between, center, nowrap);
+    opacity: 0;
+    transform: translate(0px, 50%);
+    transition: all 1s ease;
+    &._active {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
 
 .counter_item {

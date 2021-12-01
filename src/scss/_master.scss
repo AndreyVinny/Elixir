@@ -15,6 +15,13 @@
 .master_cont {
     @include flex (row, center, flex-start, nowrap);
     height: 550px;
+    opacity: 0;
+    transform: translate(0px, 50%);
+    transition: all 1s ease;
+    &._active {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
 .master-wrapper {
     height: 800px;
