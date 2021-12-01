@@ -6,15 +6,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elixir</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    @@include('page/_header.html')
-    @@include('page/_footer.html')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src='js/script.js'></script>
-
+@@include('page/_header.html')
+  <main>
+      <section class="services">
+        <div class="services_main main_cont">
+          <div class="swiper services-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide services-swiper-slide">
+                    <a href="#" class="swiper_blox">
+                      <div class="num">1</div>
+                      <div class="swiper_blox_cont">
+                          <h3>Эстетическая <br>косметология</h3>
+                       <ul class="swiper_blox_items">
+                           <li>Чистки и пилинги</li>
+                           <li>Антикупероз</li>
+                           <li>Терапия акне</li>
+                       </ul>
+                       <span class="swiper_box_btn">&rsaquo;</span>
+                      </div>
+                    </a>
+                </div>
+                <div class="swiper-slide services-swiper-slide">
+                  <a href="#" class="swiper_blox">
+                      <div class="num">2</div>
+                      <div class="swiper_blox_cont">
+                          <h3>Эстетическая <br>косметология</h3>
+                       <ul class="swiper_blox_items">
+                           <li>Чистки и пилинги</li>
+                           <li>Антикупероз</li>
+                           <li>Терапия акне</li>
+                       </ul>
+                       <span class="swiper_box_btn">&rsaquo;</span>
+                      </div>
+                    </a>
+              </div>
+              <div class="swiper-slide services-swiper-slide">
+                  <a href="#" class="swiper_blox">
+                      <div class="num">3</div>
+                      <div class="swiper_blox_cont">
+                          <h3>Эстетическая <br>косметология</h3>
+                       <ul class="swiper_blox_items">
+                           <li>Чистки и пилинги</li>
+                           <li>Антикупероз</li>
+                           <li>Терапия акне</li>
+                       </ul>
+                       <span class="swiper_box_btn">&rsaquo;</span>
+                      </div>
+                  </a>
+              </div>
+              <div class="swiper-slide services-swiper-slide">
+                  <a href="#" class="swiper_blox">
+                      <div class="num">4</div>
+                      <div class="swiper_blox_cont">
+                          <h3>Эстетическая <br>косметология</h3>
+                        <ul class="swiper_blox_items">
+                           <li>Чистки и пилинги</li>
+                           <li>Антикупероз</li>
+                           <li>Терапия акне</li>
+                       </ul>
+                       <span class="swiper_box_btn">&rsaquo;</span>
+                      </div>
+                    </a>
+              </div>
+              <div class="swiper-slide services-swiper-slide">
+                  <a href="#" class="swiper_blox">
+                      <div class="num">5</div>
+                      <div class="swiper_blox_cont">
+                          <h3>Эстетическая <br>косметология</h3>
+                       <ul class="swiper_blox_items">
+                           <li>Чистки и пилинги</li>
+                           <li>Антикупероз</li>
+                           <li>Терапия акне</li>
+                       </ul>
+                       <span class="swiper_box_btn">&rsaquo;</span>
+                      </div>
+                    </a>
+              </div>
+              <div class="swiper-slide services-swiper-slide">
+                  <a href="#" class="swiper_blox">
+                      <div class="num">6</div>
+                      <div class="swiper_blox_cont">
+                          <h3>Эстетическая <br>косметология</h3>
+                       <ul class="swiper_blox_items">
+                           <li>Чистки и пилинги</li>
+                           <li>Антикупероз</li>
+                           <li>Терапия акне</li>
+                       </ul>
+                       <span class="swiper_box_btn">&rsaquo;</span>
+                      </div>
+                    </a>
+              </div>
+            </div>
+              <div class="swiper-pagination swiper-pagination-service"></div>
+              <div class="swiper-button-prev swiper-button swiper-button-prev-service"></div>
+              <div class="swiper-button-next swiper-button swiper-button-next-service"></div>
+            </div>
+          </div>
+      </section>
+      <section class="about">
+          <div class="container">
+            <h2>О нас</h2>
+              <div class="about_cont">
+                  <div class="about_text about_block">
+                    <p>Салон красоты Elixir - место, где стремится создать атмосферу релакса и заботы. В салоне предоставляют услуги уходовых процедур за лицом и телом, различных видов массажей, восковой депиляции, чисток и пилингов. В салоне предоставляют уникальные аппаратные процедуры  HydraFacial, которые считаются инновационными в сфере омоложения и поддержания хорошего тонуса кожи. На аппарате выполняют услуги светотерапии, глубокого очищения и обновления кожи. Мастера используют натуральные сыворотки, которые благодаря новейшей технологии максимально питают кожу и насыщают полезными минералами. </p>
+                  </div>
+                  <div class="about_img about_block">
+                    <img src="../img/about/about.jpg" alt="foto">
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="master">
+        <div class="container">
+            <h2>Наш персонал</h2>
+                <div class="master_cont">
+                    <div class="swiper master-slider">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide master-swiper-slide">
+                                <div class="imgBox">
+                                    <img src="../img/master/master_1.jpg" alt="master_1" width="300px" height="400px">
+                                </div>
+                                <div class="card-name">
+                                    <h3>Голобородова Оксана</h3>
+                                    <span>Косметолог, Массажист, Мастер эпиляции</span>
+                                </div>
+                                <div class="details">
+                                    <p>Оксана - косметолог с 23-летним опытом работы, которая делает эффективные процедуры по очищению и насыщению кожи. Она ежегодно посещает международные профильные конгрессы, повышает квалификацию в Ахене, Тель-Авиве, Париже, Афинах, Неаполе, Милане и Праге.</p>
+                                </div>
+                        </div>
+                        <div class="swiper-slide master-swiper-slide">
+                                <div class="imgBox">
+                                    <img src="../img/master/master_2.jpg" alt="master_2" width="300px" height="400px">
+                                </div>
+                                <div class="card-name">
+                                    <h3>Миняйло Татьяна</h3>
+                                    <span>Косметолог, Массажист</span>
+                                </div>
+                                <div class="details">
+                                    <p>Татьяна - квалифицированный специалист аппаратной и классической косметологии. Она является передовым профессионалом в сфере косметического массажа. Татьяна неоднократно побеждала на конкурсах по массажу лица, также ее постоянно приглашают в качестве тренера различные косметические компании.</p>
+                                </div>
+                        </div>
+                        <div class="swiper-slide master-swiper-slide">
+                                <div class="imgBox">
+                                    <img src="../img/master/master_3.jpg" alt="master_3"  width="300px" height="400px">
+                                </div>
+                                <div class="card-name">
+                                    <h3>Бовкун Василий</h3>
+                                    <span>Массажист</span>
+                                </div>
+                                <div class="details">
+                                    <p>Василий Николаевич - массажист с 20-летним опытом работы, он ежегодно посещает профильные конгрессы, где делится своим опытом и усваивает новые хитрости в своем ремесле. Он владеет множеством различных техник и поможет привести тонус мышц в прекрасное состояние.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-master"></div>
+                </div>
+          </div>
+      </section>
+      <section class="gallery">
+            <div class="container">
+                <h2>Галерея</h2>
+                <div class="gallery_cont"></div>
+                    <div class="swiper gallery-slider">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_1.jpg" alt="gallery_1">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_2.jpg" alt="gallery_2">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_3.jpg" alt="gallery_3">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_1.jpg" alt="gallery_1">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_2.jpg" alt="gallery_2">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_3.jpg" alt="gallery_3">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_1.jpg" alt="gallery_1">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_2.jpg" alt="gallery_2">
+                    </div>
+                    <div class="swiper-slide gallery-swiper-slide">
+                        <img class="gallery_img" src="../img/gallery/gallery_3.jpg" alt="gallery_3">
+                    </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-gallery"></div>
+                    <div class="swiper-button-prev swiper-button-prev-gallery"></div>
+                    <div class="swiper-button-next swiper-button-next-gallery"></div>
+                </div>
+            </div>
+      </section>
+      <section class="question">
+          <h2>Популярные вопросы</h2>
+          <div class="container">
+              <div class="question_cont">
+                    <div class="questions-item">
+                        <button class="questions_top">
+                        Когда следует идти на консультацию к косметологу?<span>&#8743;</span>
+                        </button>
+                        <div class="questions_bottom">
+                            Записаться на консультацию по косметологии рекомендуется всем для профилактики. Желательно посещать специалиста хотя бы ежегодно до 25 лет и минимум дважды в год после. Чем более регулярной будет упредительная консультация, тем реже она потребуется. Вразрез с распространенным мнением, ни один грамотный врач косметолог не станет назначать консультацию чаще, чем она объективно требуется пациенту.
+                        </div>
+                    </div>
+                    <div class="questions-item">
+                        <button class="questions_top">
+                        Что провоцирует старание кожи<span>&#8743;</span>
+                        </button>
+                        <div class="questions_bottom">
+                            Факторов, которые могут стать причиной старения кожи много. Это могут быть и не правильный образ жизни и питание, вредные привычки,перенесенные заболевания, бесконтрольный прием лекарственных средств, слишком частое пребывание на солнце или активное посещение соляриев. Также одной из ключевых причин преждевременного старения кожи является недостаточное количество влаги.
+                            Здоровый образ жизни, правильно организованный уход за кожей и регулярные профилактические визиты к косметологу помогут избежать преждевременного старения кожи и сохранят ее молодой и красивый вид.
+                        </div>
+                    </div>
+                    <div class="questions-item">
+                        <button class="questions_top">
+                        Как сохранить молодость кожи?<span>&#8743;</span>
+                        </button>
+                        <div class="questions_bottom">              
+                            Предупредить старение кожи и появление морщин можно совмещая домашний и профессиональный уход. При этом начинать нужно уже с юного возраста. По совету косметолога можно использовать легкие крема, которые он подберет в соответствии с особенностями и типом вашей кожи. Также нужно для себя сделать правилом каждый день утром и вечером очищать лицо и никогда не ложиться спать не сняв косметику.
+                        </div>
+                    </div>
+                    <div class="questions-item">
+                        <button class="questions_top">
+                        Как сохранить молодость кожи?<span>&#8743;</span>
+                        </button>
+                        <div class="questions_bottom">              
+                            Предупредить старение кожи и появление морщин можно совмещая домашний и профессиональный уход. При этом начинать нужно уже с юного возраста. По совету косметолога можно использовать легкие крема, которые он подберет в соответствии с особенностями и типом вашей кожи. Также нужно для себя сделать правилом каждый день утром и вечером очищать лицо и никогда не ложиться спать не сняв косметику.
+                        </div>
+                    </div>
+                    <div class="questions-item">
+                        <button class="questions_top">
+                            Как сохранить молодость кожи?<span>&#8743;</span>
+                        </button>
+                        <div class="questions_bottom">              
+                            Предупредить старение кожи и появление морщин можно совмещая домашний и профессиональный уход. При этом начинать нужно уже с юного возраста. По совету косметолога можно использовать легкие крема, которые он подберет в соответствии с особенностями и типом вашей кожи. Также нужно для себя сделать правилом каждый день утром и вечером очищать лицо и никогда не ложиться спать не сняв косметику.
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+      <section class="counter">
+          <div class="container">
+            <h2>Нам доверяют</h2>
+                <div class="counter_cont">
+                    <div class="counter_item">
+                        <img src="../img/counter/counter_1.png" alt="counter_1" width="150px">
+                        <span class="countre" data-tager="164">0</span>
+                        <p>Довольных клиентов</p>
+                    </div>
+                    <div class="counter_item">
+                        <img src="../img/counter/counter_2.png" alt="counter_2" width="150px">
+                        <span class="countre" data-tager="342">0</span>
+                        <p>Процедуры</p>
+                    </div>
+                    <div class="counter_item">
+                        <img src="../img/counter/counter_3.png" alt="counter_3" width="150px">
+                        <span class="countre" data-tager="10">0</span>
+                        <p>Лет на рынке</p>
+                    </div>
+                </div>
+            </div>
+      </section>
+  </main>
+@@include('page/_footer.html')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src='js/script.js'></script>
 </body>
 </html>
