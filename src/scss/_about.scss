@@ -40,6 +40,25 @@
         min-height: 380px;
         width: 100%;
         height: auto;
+        margin-bottom: 45px;
+    }
+    ul {
+        padding-top: 12px;
+        margin-left: 35px;
+        li {
+        list-style-type: circle;
+        letter-spacing: 2px;
+        line-height: 20px;
+        }
+    }
+}
+.about_img_hidden {
+    display: none;
+}
+
+@media (max-width: $notebook) {
+    .about_img_hidden {
+        display: block;
     }
 }
 
@@ -60,5 +79,8 @@
             margin-top: 25px;
             margin-bottom: 25px;
         }
+    }
+    .about_img_hidden {
+        display: none;
     }
 }

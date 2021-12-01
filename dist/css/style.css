@@ -845,8 +845,27 @@ a {
   min-height: 380px;
   width: 100%;
   height: auto;
+  margin-bottom: 45px;
+}
+.about_block ul {
+  padding-top: 12px;
+  margin-left: 35px;
+}
+.about_block ul li {
+  list-style-type: circle;
+  letter-spacing: 2px;
+  line-height: 20px;
 }
 
+.about_img_hidden {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .about_img_hidden {
+    display: block;
+  }
+}
 @media (max-width: 720px) {
   .about h2 {
     text-align: center;
@@ -876,6 +895,10 @@ a {
   .about_block p {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+
+  .about_img_hidden {
+    display: none;
   }
 }
 .master {
