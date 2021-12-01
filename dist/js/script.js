@@ -1,3 +1,9 @@
+const loader = document.querySelector('.load');
+
+window.addEventListener('load', (event) => {
+    loader.classList.add('hidden')
+     console.log(event);
+});
 let menu = document.querySelector('.nav_menu'),
     burger = document.querySelector('.ham_menu'),
     body = document.querySelector('body');
@@ -36,7 +42,6 @@ var parallaxInstance = new Parallax(text);
               let icon7 = document.getElementById('icon7');
               let icon8 = document.getElementById('icon8');
 
-
               window.addEventListener('scroll', function(){
 
               value = window.scrollY;
@@ -50,8 +55,7 @@ var parallaxInstance = new Parallax(text);
               icon7.style.left = value * 0.2 + 'px';
               icon8.style.left = -value * 0.2 + 'px';
 
-          })
-;
+          });
 const swiper = new Swiper('.services-slider', {
   navigation: {
     nextEl: '.swiper-button-next-service',
@@ -145,6 +149,9 @@ const swiper_gallery = new Swiper('.gallery-slider', {
   mousewheel: {
       sensitivity: 1,
   },
+  autoplay: {
+    delay: 5000,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -190,7 +197,7 @@ questionTop.forEach(btn => {
     })
 });;
 const countres = document.querySelectorAll('.countre'),
-      speed = 100000;
+         speed = 2000;
 
 countres.forEach(counter => {
     const updateCount = () => {
@@ -201,15 +208,55 @@ countres.forEach(counter => {
 
         if(count < target){
             counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 5)
+            setTimeout(updateCount, 80)
         } else {
-
             counter.innerText = target;
         }
     }
-    updateCount();
+
+    let block = document.querySelector('.counter_cont')
+    function check () {
+    if(block.classList.contains('_active') == true)
+        updateCount()
+    }
+
+        setInterval (check, 1000)
 })
-
     ;
+const animItems = document.querySelectorAll('._anim_items');
 
+if (animItems.length > 0){
+    window.addEventListener('scroll', animOnScroll);
+    function animOnScroll(){
+        for(let i=0; i < animItems.length; i++){
+            const animItem = animItems[i];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 4;
 
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if(animItemHeight > window.innerHeight){
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                animItem.classList.add('_active');
+            } else {
+                if(!animItem.classList.contains('_anim_no_hide')){
+                    animItem.classList.remove('_active');
+                }
+            }
+        }
+    }
+    function offset(el) {
+         const rect = el.getBoundingClientRect(),
+         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+         return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
+    }
+
+    setTimeout(() => {
+        animOnScroll()
+    }, 700);
+};

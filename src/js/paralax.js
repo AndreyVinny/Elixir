@@ -12,7 +12,6 @@ var parallaxInstance = new Parallax(text);
               let icon7 = document.getElementById('icon7');
               let icon8 = document.getElementById('icon8');
 
-
               window.addEventListener('scroll', function(){
 
               value = window.scrollY;

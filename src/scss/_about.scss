@@ -1,9 +1,5 @@
 .about {
-    h2 {
-        font-size: 44px;
-        padding-left: 25px;
-        margin-bottom: 25px;
-    }
+    overflow: hidden;
     &::before {
         content: '';
         display: block;
@@ -25,7 +21,6 @@
 
 .about_cont {
     @include flex (row, space-between, flex-start, nowrap);
-    padding: 50px 0px;
 }
 
 .about_block {
@@ -52,8 +47,29 @@
         }
     }
 }
+
 .about_img_hidden {
     display: none;
+}
+
+.about_text {
+    opacity: 0;
+    transform: translate(-50%, 0px);
+    transition: all 1s ease;
+    &._active {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.about_img {
+    opacity: 0;
+    transform: translate(50%, 0px);
+    transition: all 1s ease;
+    &._active {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
 
 @media (max-width: $notebook) {

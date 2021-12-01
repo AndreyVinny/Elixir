@@ -1,5 +1,5 @@
 const countres = document.querySelectorAll('.countre'),
-      speed = 100000;
+         speed = 2000;
 
 countres.forEach(counter => {
     const updateCount = () => {
@@ -10,13 +10,18 @@ countres.forEach(counter => {
 
         if(count < target){
             counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 5)
+            setTimeout(updateCount, 80)
         } else {
-
             counter.innerText = target;
         }
     }
-    updateCount();
-})
 
+    let block = document.querySelector('.counter_cont')
+    function check () {
+    if(block.classList.contains('_active') == true)
+        updateCount()
+    }
+
+        setInterval (check, 1000)
+})
     

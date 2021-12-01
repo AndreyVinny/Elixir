@@ -91,6 +91,9 @@ const swiper_gallery = new Swiper('.gallery-slider', {
   mousewheel: {
       sensitivity: 1,
   },
+  autoplay: {
+    delay: 5000,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,

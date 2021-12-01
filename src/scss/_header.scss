@@ -30,7 +30,7 @@
 
 .nav_item_link {
     color: var(--color-text-1);
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgb(114, 114, 114);
     font-weight: bold;
 }
 
@@ -144,6 +144,8 @@
       .nav_item_link{
           font-size: 15px;
           color: var(--color-spec-2);
+            text-shadow: none;
+
       }
 
       .ham_menu {
