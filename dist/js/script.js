@@ -1,3 +1,9 @@
+const loader = document.querySelector('.load');
+
+window.addEventListener('load', (event) => {
+    loader.classList.add('hidden')
+     console.log(event);
+});
 let menu = document.querySelector('.nav_menu'),
     burger = document.querySelector('.ham_menu'),
     body = document.querySelector('body');
@@ -36,7 +42,6 @@ var parallaxInstance = new Parallax(text);
               let icon7 = document.getElementById('icon7');
               let icon8 = document.getElementById('icon8');
 
-
               window.addEventListener('scroll', function(){
 
               value = window.scrollY;
@@ -50,8 +55,7 @@ var parallaxInstance = new Parallax(text);
               icon7.style.left = value * 0.2 + 'px';
               icon8.style.left = -value * 0.2 + 'px';
 
-          })
-;
+          });
 const swiper = new Swiper('.services-slider', {
   navigation: {
     nextEl: '.swiper-button-next-service',
@@ -215,7 +219,7 @@ countres.forEach(counter => {
     if(block.classList.contains('_active') == true)
         updateCount()
     }
-    
+
         setInterval (check, 1000)
 })
     ;
@@ -256,6 +260,3 @@ if (animItems.length > 0){
         animOnScroll()
     }, 700);
 };
-
-
-

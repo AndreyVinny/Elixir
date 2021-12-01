@@ -1,9 +1,5 @@
 .about {
-    h2 {
-        font-size: 44px;
-        padding-left: 25px;
-        margin-bottom: 25px;
-    }
+    overflow: hidden;
     &::before {
         content: '';
         display: block;
@@ -25,7 +21,6 @@
 
 .about_cont {
     @include flex (row, space-between, flex-start, nowrap);
-    padding: 50px 0px;
 }
 
 .about_block {

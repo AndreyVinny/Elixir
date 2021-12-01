@@ -21,7 +21,7 @@ countres.forEach(counter => {
     if(block.classList.contains('_active') == true)
         updateCount()
     }
-    
+
         setInterval (check, 1000)
 })
     

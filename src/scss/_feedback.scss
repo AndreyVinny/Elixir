@@ -1,6 +1,9 @@
 .feedback {
     background-color: var(--color-spec-3);
     padding: 75px 0px;
+    h2 {
+        color: var(--color-text-1);
+    }
 }
 
 .feedback_block {
@@ -13,7 +16,6 @@
         border: 1px solid var(--color-spec-3);
         outline: none;
         margin-bottom: 15px;
-
     }
     input:focus {
         outline: none;
