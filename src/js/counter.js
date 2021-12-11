@@ -10,7 +10,7 @@ countres.forEach(counter => {
 
         if(count < target){
             counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 80)
+            setTimeout(updateCount, 1)
         } else {
             counter.innerText = target;
         }
@@ -22,6 +22,6 @@ countres.forEach(counter => {
         updateCount()
     }
 
-        setInterval (check, 1000)
+        setInterval (check, 1500)
 })
     

@@ -21,6 +21,7 @@
     "sass": "^1.42.1"
   },
   "dependencies": {
+    "gulp-javascript-obfuscator": "^1.1.6",
     "imagemin-jpeg-recompress": "^7.0.0"
   }
 }

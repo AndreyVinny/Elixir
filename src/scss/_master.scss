@@ -1,5 +1,5 @@
 .master {
-    background-color: #cefa7c;
+    background-color: var(--color-spec-3);
     padding: 50px 0px 25px;
     padding-bottom: 150px;
     position: relative;
@@ -30,7 +30,7 @@
 .master-swiper-slide {
     max-width: 400px;
     height: 500px;
-    background: #ffffff;
+    background-color: var(--color-text-1);
     transition: height .5s ease-in-out;
     color: #000000;
     border-bottom-left-radius: 15px;

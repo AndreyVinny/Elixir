@@ -1,15 +1,18 @@
 <footer>
-    <section class="feedback" id="feedback">
+    <section class="feedback" >
         <div class="container">
-            <h2>Связаться с нами или записаться на прием</h2>
+            <h2 id="feedback">Связаться с нами или записаться на прием</h2>
             <div class="feedback_cont">
                 <div class="feedback_block">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="number" placeholder="Номер телефона">
-                    <textarea type="text" name="massage" placeholder='Ваше сообщение (не обязательно).' rows="5" cols="33"></textarea>
+                    <input type="text" placeholder="Ваше имя" class="input_name">
+                    <input type="number" placeholder="Номер телефона" class="input_phone">
+                    <textarea type="text" name="massage" placeholder='Ваше сообщение (не обязательно).' rows="5" cols="33" class="feedback_message input_message"></textarea>
+                    <div class="feedback-button">
+                        <button class="inpit_button btn">Отправить</button>
+                    </div>
                 </div>
                 <div class="feedback_other">
-                    <p>А так же можете нам позвонить по номереру <a href="tel:09600">0966111111</a> или написать в <a href="">Viber</a>.</p>
+                    <p>А так же можете нам позвонить по номереру <a href="tel:380674037155">+380674037155</a> или написать в <a href="viber://add?number=380674037155">Viber</a>.</p>
                 </div>
             </div>
         </div>
@@ -20,18 +23,51 @@
             <div class="footer_cont">
                 <div class="footer_block">
                     <div class="footer_item">
-                        <h4>Время работы:</h4>
-                        <p>Каждый день с 09:00 - 20:00</p>
-                        <p>Без перерыва и выходных</p>
+                        <div class="footer_item_top">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-clock'></use>
+                            </svg>
+                            <h4>Время работы:</h4>
+                        </div>
+                        <p>Понедельник - выходной</p>
+                        <p>Вторник - 09:00 - 20:00</p>
+                        <p>Стеда - 09:00 - 20:00</p>
+                        <p>Четверг - 09:00 - 20:00</p>
+                        <p>Пятница - 09:00 - 20:00</p>
+                        <p>Суббота - 09:00 - 20:00</p>
+                        <p>Воскресенье - выходной</p>
                     </div>
                     <div class="footer_item">
-                        <h4>Адрес:</h4>
+                        <div class="footer_item_top">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-location'></use>
+                            </svg>
+                            <h4>Адрес:</h4>
+                        </div>
                         <p>Киев, пр-т Мира, 9а</p>
                     </div>
                     <div class="footer_item">
-                        <h4>Телефоны:</h4>
-                        <p>Тел: <a href="">09661111111</a></p>
-                        <p>Viber: <a href="">09661111111</a></p>
+                        <div class="footer_item_top">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-phone'></use>
+                            </svg>
+                            <h4>Связь:</h4>
+                        </div>
+                        <p class="footer_item_cont"> 
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-phone'></use>
+                            </svg>
+                            <a href="tel:380674037155">+380674037155</a></p>
+                        <p class="footer_item_cont">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                            <use href='./img/icon/symbol-defs.svg#icon-viber_logo_icon_144761'></use>
+                            </svg>
+                            <a href="viber://add?number=380674037155" target="blank">+380674037155</a></p>
+                        <p class="footer_item_cont">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                            <use href='./img/icon/symbol-defs.svg#icon-instagram'></use>
+                            </svg>
+                            <a href="https://www.instagram.com/elixir.salon.kiev/" target="blank">@elixir.salon.kiev</a></p>
                     </div>
                 </div>
                 <div class="footer_map">
