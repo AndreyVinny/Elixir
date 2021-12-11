@@ -9,7 +9,8 @@ let path = {
         img: project_folder + '/img/',
     },
     src: {
-        html: [source_folder + '/html/index.html', "!" + source_folder + '/_*.html'],
+        html: [source_folder + '/html/*.html', "!" + source_folder + '/_*.html'],
+        // html: [source_folder + '/html/index.html', "!" + source_folder + '/_*.html'],
         css: source_folder + '/scss/style.scss',
         js: source_folder + '/js/script.js',
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,wepb}',

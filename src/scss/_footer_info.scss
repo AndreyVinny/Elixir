@@ -1,10 +1,13 @@
+
+
+
 .footer_info {
     padding-bottom: 75px;
+    background-color: var(--color-text-1);
     &::before {
         content: '';
         display: block;
-        background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(206,250,124,1) 100%);
+        background: linear-gradient(0deg, var(--color-text-1) 0%, var(--color-spec-3) 100%);
         height: 150px;
         width: 100%;
     }
@@ -14,7 +17,6 @@
     text-align: center;
 }
 
-
 .footer_block {
     @include flex (row, space-between, flex-start, nowrap);
     margin: 0 auto;
@@ -22,17 +24,51 @@
     margin-bottom: 25px;
 }
 
+
 .footer_item {
     h4 {
         font-size: 22px;
-        margin-bottom: 10px;
+        margin-left: 10px;
     }
     p {
-        font-size: 19px;
-        line-height: 29px;
+        margin-bottom: 3px;
+        text-align: left;
     }
     a {
         color: var(--color-text-3);
+        &:hover {
+            color: var(--color-spec-2);
+        }
+    }
+}
+
+.footer_item_top {
+    @include flex (row, center, flex-start, nowrap);
+    margin-bottom: 15px;
+    svg{
+        width: 25px;
+        height: 25px;
+         fill: var(--color-spec-2);
+    }
+}
+.footer_item_cont {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: left;
+     svg {
+        width: 15px;
+        height: 15px;
+        fill: var(--color-text-3);
+    }
+}
+.footer_item_cont:hover svg {
+    fill: var(--color-spec-2);
+}
+
+.footer_map {
+    iframe {
+        box-shadow: 0px 0px 12px 11px rgba(34, 60, 80, 0.2);
     }
 }
 

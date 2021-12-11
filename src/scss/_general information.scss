@@ -8,6 +8,24 @@
   --color-spec-4:rgba(224, 247, 195, 0.8);
   --color-spec-5:#A3BB75;
   --color-spec-6:#efefef;
+  --color-spec-7:#fcfcfc;
+  --color-spec-8:#d1d1d1;
+  --color-spec-9:#131313;
+}
+
+.dark {
+    --color-text-1:#41612c;
+    --color-text-2:#78A328;
+    --color-text-3:#222222;
+    --color-spec-1:#232422;
+    --color-spec-2:#0c7011;
+    --color-spec-3:#161616;
+    --color-spec-4:rgba(224, 247, 195, 0.8);
+    --color-spec-5:#A3BB75;
+    --color-spec-6:#efefef;
+    --color-spec-7:#929292;
+    --color-spec-8:#636363;
+    --color-spec-9:#133c06;
 }
 
 * {
@@ -29,13 +47,23 @@ ul {
 a {
     text-decoration: none;
 }
-
 h2 {
     text-align: center;
     font-size: 44px;
-    padding-left: 25px;
     margin-bottom: 65px;
     text-shadow: 1px 1px 1px rgb(174, 174, 174);
+}
+.btn {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 15px 30px;
+    background-color: var(--color-text-2);
+    color: var(--color-text-1);
+    border-radius: 50px;
+    letter-spacing: 2px;
+    &:hover {
+        background-color: var(--color-spec-2);
+    }  
 }
 
 @mixin flex ($fd, $jc, $ai, $fw) {

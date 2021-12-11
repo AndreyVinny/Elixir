@@ -1,0 +1,63 @@
+.insta {
+    background-color: var(--color-spec-3);
+    color: var(--color-text-1);
+    text-align: center;
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.insta_cont {
+    width: 60%;
+    margin: 0 auto;
+    // transform: translate(0px, 50%);
+    // transition: all 1s ease;
+    // &._active {
+    //     opacity: 1;
+    //     transform: translate(0px, 0px);
+    // }
+    p {
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 1px rgb(184, 184, 184);
+    }
+    img {
+        padding: 25px 0px 60px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: $notebook) {
+    .insta_cont {
+        width: 75%;
+        margin: 0 auto;
+        p {
+            font-size: 24px;
+        }
+        .btn_inta {
+            font-size: 26px;
+        }
+    }   
+}
+
+@media (max-width: $tablet) {
+    .insta_cont {
+        width: 90%;
+    }   
+}
+
+@media (max-width: $mobile) {
+    .insta_cont {
+        width: 100%;
+        img {
+            padding: 25px 0px 60px;
+            margin: 0 auto;
+            cursor: pointer;
+            width: 100px;
+        }
+        .btn_inta {
+            font-size: 22px;
+        }
+    }   
+}

@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,8 +26,10 @@
     </section>
     <section class="navigation">
         <div class="container">
+            <div class="dark_mode"></div>
+
             <div class="nav">
-                <a href="#" class="header_logo"><img src="./img/logo_main.png" alt="logo" width="100px" height="50px"></a>
+                <!-- <a href="#" class="header_logo"><img src="./img/logo_main.png" alt="logo" width="100px" height="50px"></a> -->
                 <div class="nav_block">
                         <div class="ham_menu">
                             <span class="ham_menu_line"></span>
@@ -30,11 +37,11 @@
                             <span class="ham_menu_line"></span>
                         </div>
                     <ul class="nav_menu">
-                        <li class="nav_item"><a class="nav_item_link" href="#services">Услуги</a></li>
+                        <li class="nav_item"><a class="nav_item_link" href="index.html">Главная</a></li>
                         <li class="nav_item"><a class="nav_item_link" href="#about">О салоне</a></li>
                         <li class="nav_item"><a  class="nav_item_link" href="#master">Наш персонал</a></li>
                         <li class="nav_item"><a class="nav_item_link" href="#gallery">Фотогалерея</a></li>
-                        <li class="nav_item"><a class="nav_item_link" href="#question">Обратная свясь</a></li>
+                        <li class="nav_item"><a class="nav_item_link" href="#feedback">Обратная свясь</a></li>
                         <li class="nav_item"><a  class="nav_item_link" href="#footer_info">Контакты</a></li>
                     </ul>
                 </div>
@@ -63,107 +70,30 @@
             </div>
         </div>
     </section>
-    <section class="services" id="services">
-        <div class="services_main main_cont">
-        <div class="swiper services-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide services-swiper-slide">
-                    <a href="#" class="swiper_blox">
-                    <div class="num">1</div>
-                    <div class="swiper_blox_cont">
-                        <h3>Эстетическая <br>косметология</h3>
-                    <ul class="swiper_blox_items">
-                        <li>Чистки и пилинги</li>
-                        <li>Антикупероз</li>
-                        <li>Терапия акне</li>
-                    </ul>
-                    <span class="swiper_box_btn">&gt;</span>
-                    </div>
-                    </a>
+    <section class="contact">
+        <div class="container">
+            <div class="contact_cont">
+                <div class="contact_block">
+                    <svg class="icon symbol-defs" width="30px" height="30px">
+                        <use href='./img/icon/symbol-defs.svg#icon-phone'></use>
+                    </svg>
+                    <a href="tel:380674037155">+380674037155</a>
                 </div>
-                <div class="swiper-slide services-swiper-slide">
-                <a href="#" class="swiper_blox">
-                    <div class="num">2</div>
-                    <div class="swiper_blox_cont">
-                        <h3>Эстетическая <br>косметология</h3>
-                    <ul class="swiper_blox_items">
-                        <li>Чистки и пилинги</li>
-                        <li>Антикупероз</li>
-                        <li>Терапия акне</li>
-                    </ul>
-                    <span class="swiper_box_btn">&gt;</span>
-                    </div>
-                    </a>
-            </div>
-            <div class="swiper-slide services-swiper-slide">
-                <a href="#" class="swiper_blox">
-                    <div class="num">3</div>
-                    <div class="swiper_blox_cont">
-                        <h3>Эстетическая <br>косметология</h3>
-                    <ul class="swiper_blox_items">
-                        <li>Чистки и пилинги</li>
-                        <li>Антикупероз</li>
-                        <li>Терапия акне</li>
-                    </ul>
-                    <span class="swiper_box_btn">&gt;</span>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide services-swiper-slide">
-                <a href="#" class="swiper_blox">
-                    <div class="num">4</div>
-                    <div class="swiper_blox_cont">
-                        <h3>Эстетическая <br>косметология</h3>
-                        <ul class="swiper_blox_items">
-                        <li>Чистки и пилинги</li>
-                        <li>Антикупероз</li>
-                        <li>Терапия акне</li>
-                    </ul>
-                    <span class="swiper_box_btn">&gt;</span>
-                    </div>
-                    </a>
-            </div>
-            <div class="swiper-slide services-swiper-slide">
-                <a href="#" class="swiper_blox">
-                    <div class="num">5</div>
-                    <div class="swiper_blox_cont">
-                        <h3>Эстетическая <br>косметология</h3>
-                    <ul class="swiper_blox_items">
-                        <li>Чистки и пилинги</li>
-                        <li>Антикупероз</li>
-                        <li>Терапия акне</li>
-                    </ul>
-                    <span class="swiper_box_btn">&gt;</span>
-                    </div>
-                    </a>
-            </div>
-            <div class="swiper-slide services-swiper-slide">
-                <a href="#" class="swiper_blox">
-                    <div class="num">6</div>
-                    <div class="swiper_blox_cont">
-                        <h3>Эстетическая <br>косметология</h3>
-                    <ul class="swiper_blox_items">
-                        <li>Чистки и пилинги</li>
-                        <li>Антикупероз</li>
-                        <li>Терапия акне</li>
-                    </ul>
-                    <span class="swiper_box_btn">&gt;</span>
-                    </div>
-                    </a>
-            </div>
-            </div>
-            <div class="swiper-pagination swiper-pagination-service"></div>
-            <div class="swiper-button-prev swiper-button swiper-button-prev-service"></div>
-            <div class="swiper-button-next swiper-button swiper-button-next-service"></div>
+                <div class="contact_block">
+                    <svg class="icon symbol-defs" width="30px" height="30px">
+                        <use href='./img/icon/symbol-defs.svg#icon-instagram'></use>
+                    </svg>
+                    <a href="https://www.instagram.com/elixir.salon.kiev/" target="blank" >elixir.salon.kiev</a>
+                </div>
             </div>
         </div>
     </section>
 </header>
 
   <main>
-      <section class="about" id="about">
+      <section class="about">
           <div class="container">
-            <h2>О нас</h2>
+            <h2 id="about">О нас</h2>
               <div class="about_cont">
                   <div class="about_text about_block _anim_items _anim_no_hide">
                     <p>Салон красоты Elixir - место, где стремится создать атмосферу релакса и заботы. В салоне предоставляют услуги уходовых процедур за лицом и телом, различных видов массажей, восковой депиляции, чисток и пилингов. В салоне предоставляют уникальные аппаратные процедуры  HydraFacial, которые считаются инновационными в сфере омоложения и поддержания хорошего тонуса кожи. На аппарате выполняют услуги светотерапии, глубокого очищения и обновления кожи. Мастера используют натуральные сыворотки, которые благодаря новейшей технологии максимально питают кожу и насыщают полезными минералами.<br>
@@ -186,9 +116,9 @@
               </div>
           </div>
       </section>
-      <section class="master" id="master">
+      <section class="master">
         <div class="container">
-            <h2>Наш персонал</h2>
+            <h2 id="master">Наш персонал</h2>
                 <div class="master_cont _anim_items _anim_no_hide">
                     <div class="swiper master-slider">
                         <div class="swiper-wrapper master-wrapper">
@@ -198,7 +128,7 @@
                                 </div>
                                 <div class="card-name">
                                     <h3>Голобородова Оксана</h3>
-                                    <span>Косметолог, Массажист, Мастер эпиляции</span>
+                                    <span>Косметолог, Массажист</span>
                                 </div>
                                 <div class="details">
                                     <p>Оксана - косметолог с 23-летним опытом работы, которая делает эффективные процедуры по очищению и насыщению кожи. Она ежегодно посещает международные профильные конгрессы, повышает квалификацию в Ахене, Тель-Авиве, Париже, Афинах, Неаполе, Милане и Праге.</p>
@@ -222,7 +152,7 @@
                                 </div>
                                 <div class="card-name">
                                     <h3>Бовкун Василий</h3>
-                                    <span>Массажист</span>
+                                    <span>Массажист, Остеопат</span>
                                 </div>
                                 <div class="details">
                                     <p>Василий Николаевич - массажист с 20-летним опытом работы, он ежегодно посещает профильные конгрессы, где делится своим опытом и усваивает новые хитрости в своем ремесле. Он владеет множеством различных техник и поможет привести тонус мышц в прекрасное состояние.</p>
@@ -233,9 +163,339 @@
                 </div>
           </div>
       </section>
-      <section class="gallery" id="gallery">
+      <section class="price">
+          <div class="container">
+            <h2>Услуги и цены</h2>
+            <div class="price_cont">
+                <div class="price_block">
+                    <h3>Косметология</h3>
+                    <div class="price_item">
+                        <button class="price_top">
+                            HydraFacia
+                        </button>
+                        <div class="price_bottom">
+                            <div class="price_bottom_item">
+                                <p>HydraFacia- Светотерапия</p><p>150 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>HydraFacial - "Пол часа до идела " 3 сывортки + ревитал.,с фактором роста</p><p>1 450 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>HydraFacial - Глубокое очищение и обновление</p><p>1 350 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>HydraFacial - "Выход в свет"- алмазный пилинг</p><p>1 550 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>HydraFacial + Сыворотки</p><p>1 110 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>HydraFacial - алмазный пилин</p><p>350 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>HydraFacial - революц.омоложение - алмаз п-л + 3 сыворотки АНА пептиды м- к</p><p>1 650 грн</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Микроигольчятая фракционная RF терапия
+                        </button>
+                        <div class="price_bottom">
+                            <div class="price_bottom_item">
+                                <p>RF - Волосы</p><p>1 000 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>RF - Кисти рук</p><p>1 600 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Кожа вокруг глаз</p><p>1 500 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Лечение рубцов (10*10)</p><p>1 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Лицо + шея + декольте (не глубокое)</p><p>4 000 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>RF терапия - Лицо + шея</p><p>3 500 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>RF терапия-Лицо (с зоной подбородка)</p><p>3 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Гипергидроз</p><p>1 500 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Декольте глубокое</p><p>2 500 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Лечение и профилактика алопеции (с препаратом)</p><p>1 300 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Работа по телу</p><p>от 1 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - шея + декольте</p><p>3 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - Шея или декольте</p><p>2 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>RF - шея* декольте глубокое</p><p>3 200 грн</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Пилинг
+                        </button>
+                        <div class="price_bottom">
+                            <div class="price_bottom_item">
+                                <p>Пилинг BioRePee (зона декольте)</p><p>1 650 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Пилинг BioRePeel лицо</p><p>1 100 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг IMAGE Лифтинговый</p><p>1 100 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг PCA Sensi</p><p>1 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг PCA джеснер+гидрохинон</p><p>900 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Пилинг PCA Ретиноловый 6%</p><p>1 650 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Пилинг PCA ультрапил 1</p><p>1 100 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг PCA Энзимный пилинг</p><p>1 100 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг Perfect image 50%</p><p>1 000 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг интимный</p><p>1 650 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг зоны спины</p><p>от 1 800 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг феноловый</p><p>2 200 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Пилинг феруловый</p><p>700 грн</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Уходовые процедуры
+                        </button>
+                        <div class="price_bottom">
+                            <div class="price_bottom_item">
+                                <p>Процедура "Кислород" (лицо+шея+декольте)</p><p>850 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Уход IS Clinica "Огонь и Лед"</p><p>1 680 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Уход IS Clinical- Пенный ферментативный</p><p>1 680 грн</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Чистка лица
+                        </button>
+                        <div class="price_bottom">
+                            <div class="price_bottom_item">
+                                <p>Маска - 3-х слойная DMK</p><p>1 500 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Маска SM "9"</p><p>150 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Маска SM "Анти-возраст"</p><p>200 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Маска SM "Экспресс-краса</p><p>200 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Маска WOW</p><p>210 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Маска альгинатная</p><p>250 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Маска - Ферментотивная DMK №2</p><p>1 300 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Маска - Ферментотивная DMK №1</p><p>1 300 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Маска противовосп</p><p>200 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Чистка гигиеническая</p><p>750 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Чистка комбинированная</p><p>900 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Чистка ультразвуковая</p><p>650 грн</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Депиляция
+                        </button>
+                        <div class="price_bottom">
+                            <div class="price_bottom_item">
+                                <p>Бедра</p><p>280 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Бикини классическое</p><p>350 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Бикини Экстра</p><p>450 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Верхняя губа</p><p>100 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Голень, колено</p><p>250 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Депиляция зон подмышечных впадин</p><p>120 грн</p>
+                            </div>
+                            <div class="price_bottom_item">
+                                <p>Любая зона размером с ладонь</p><p>120 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Ноги полностью</p><p>450 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Предплечье и локоть</p><p>170 грн</p>
+                            </div> 
+                            <div class="price_bottom_item">
+                                <p>Руки полностью</p><p>230 грн</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- <div class="price_item">
+                        <button class="price_top">
+                            HydraFacia
+                        </button>
+                        <div class="price_bottom">
+                            <p>HydraFacia- Светотерапия<span class="cost">150 грн</span></p>
+                            <p>HydraFacial - "Пол часа до идела " 3 сывортки + ревитал.,с фактором роста<span class="cost">1 450 грн</span></p>
+                            <p>HydraFacial - Глубокое очищение и обновление<span class="cost">1 350 грн</span></p>
+                            <p>HydraFacial - "Выход в свет"- алмазный пилинг<span class="cost">1 550 грн</span></p>
+                            <p>HydraFacial + Сыворотки<span class="cost">1 110 грн</span></p>
+                            <p>HydraFacial - алмазный пилин<span class="cost">350 грн</span></p>
+                            <p>HydraFacial - революц.омоложение - алмаз п-л + 3 сыворотки АНА пептиды м- к<span class="cost">1 650 грн</span></p>
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            RF терапия
+                        </button>
+                        <div class="price_bottom">
+                            <p>RF - Волосы<span class="cost">1 000 грн</span></p>
+                            <p>RF - Кисти рук<span class="cost">1 600 грн</span></p>
+                            <p>RF - Кожа вокруг глаз<span class="cost">1 500 грн</span></p>
+                            <p>RF - Лечение рубцов (10*10)<span class="cost">1 000 грн</span></p>
+                            <p>RF - Лицо + шея + декольте (не глубокое)<span class="cost">4 000 грн</span></p>
+                            <p>RF терапия - Лицо + шея<span class="cost">3 500 грн</span></p>
+                            <p>RF терапия-Лицо (с зоной подбородка)<span class="cost">3 000 грн</span></p>
+                            <p>RF - Гипергидроз<span class="cost">1 500 грн</span></p>
+                            <p>RF - Декольте глубокое<span class="cost">2 500 грн</span></p>
+                            <p>RF - Лечение и профилактика алопеции (с препаратом)<span class="cost">1 300 грн</span></p>
+                            <p>RF - Работа по телу<span class="cost">от 1 000 грн</span></p>
+                            <p>RF - шея + декольте<span class="cost">3 000 грн</span></p>
+                            <p>RF - Шея или декольте<span class="cost">2 000 грн</span></p>
+                            <p>RF - шея* дкольте глубокое<span class="cost">3 200 грн</span></p>
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Пилинг
+                        </button>
+                        <div class="price_bottom">
+                            <p>Пилинг BioRePee (зона декольте)<span class="cost">1 650 грн</span></p>
+                            <p>Пилинг BioRePeel лицо<span class="cost">1 100 грн</span></p>
+                            <p>Пилинг IMAGE Лифтинговый<span class="cost">1 100 грн</span></p>
+                            <p>Пилинг PCA Sensi<span class="cost">1 000 грн</span></p>
+                            <p>Пилинг PCA джеснер+гидрохинон<span class="cost">900 грн</span></p>
+                            <p>Пилинг PCA Ретиноловый 6%<span class="cost">1 650 грн</span></p>
+                            <p>Пилинг PCA ультрапил 1<span class="cost">1 100 грн</span></p>
+                            <p>Пилинг PCA Энзимный пилинг<span class="cost">1 100 грн</span></p>
+                            <p>Пилинг Perfect image 50%<span class="cost">1 000 грн</span></p>
+                            <p>Пилинг интимный<span class="cost">1 650 грн</span></p>
+                            <p>Пилинг зоны спины <span class="cost">1 800 грн</span></p>
+                            <p>Пилинг феноловый<span class="cost">2 200 грн</span></p>
+                            <p>Пилинг феруловый<span class="cost">700 грн</span></p>
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Уходовые процедуры
+                        </button>
+                        <div class="price_bottom">
+                            <p>Процедура "Кислород" (лицо+шея+декольте)<span class="cost">850 грн</span></p>
+                            <p>Уход IS Clinica "Огонь и Лед"<span class="cost">1 680 грн</span></p>
+                            <p>Уход IS Clinical- Пенный ферментативный<span class="cost">1 680 грн</span></p>
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Чистка лица
+                        </button>
+                        <div class="price_bottom">
+                            <p>Маска - 3-х слойная DMK<span class="cost">1 500 грн</span></p>
+                            <p>Маска SM "9"<span class="cost">150 грн</span></p>
+                            <p>Маска SM "Анти-возраст"<span class="cost">200 грн</span></p>
+                            <p>Маска SM "Экспресс-краса"<span class="cost">200 грн</span></p>
+                            <p>Маска WOW<span class="cost">210 грн</span></p>
+                            <p>Маска альгинатная<span class="cost">250 грн</span></p>
+                            <p>Маска - Ферментотивная DMK №2<span class="cost">1 300 грн</span></p>
+                            <p>Маска - Ферментотивная DMK №1<span class="cost">1 300 грн</span></p>
+                            <p>Маска противовосп<span class="cost">200 грн</span></p>
+                            <p>Чистка гигиеническая<span class="cost">750 грн</span></p>
+                            <p>Чистка комбинированная<span class="cost">900 грн</span></p>
+                            <p>Чистка ультразвуковая <span class="cost">650 грн</span></p>
+                        </div>
+                    </div>
+                    <div class="price_item">
+                        <button class="price_top">
+                            Депиляция
+                        </button>
+                        <div class="price_bottom">
+                            <p>Бедра<span class="cost">280 грн</span></p>
+                            <p>Бикини классическое<span class="cost">350 грн</span></p>
+                            <p>Бикини Экстра<span class="cost">450 грн</span></p>
+                            <p>Верхняя губа<span class="cost">100 грн</span></p>
+                            <p>Голень, колено<span class="cost">250 грн</span></p>
+                            <p>Депиляция зон подмышечных впадин<span class="cost">120 грн</span></p>
+                            <p>Любая зона размером с ладонь<span class="cost">120 грн</span></p>
+                            <p>Ноги полностью<span class="cost">450 грн</span></p>
+                            <p>Предплечье и локоть<span class="cost">170 грн</span></p>
+                            <p>Руки полностью<span class="cost">230 грн</span></p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+          </div>
+      </section>
+      <section class="gallery" >
             <div class="container">
-                <h2>Галерея</h2>
+                <h2 id="gallery">Галерея</h2>
                 <div class="gallery_cont"></div>
                     <div class="swiper gallery-slider">
                     <div class="swiper-wrapper">
@@ -263,9 +523,9 @@
                         <div class="swiper-slide gallery-swiper-slide" data-swiper-autoplay="2000">
                             <img class="gallery_img" src="./img/gallery/gallery_8.jpg" alt="gallery_8" loading="lazy">
                         </div>
-                        <div class="swiper-slide gallery-swiper-slide" data-swiper-autoplay="2000">
+                        <!-- <div class="swiper-slide gallery-swiper-slide" data-swiper-autoplay="2000">
                             <img class="gallery_img" src="./img/gallery/gallery_9.jpg" alt="gallery_9" loading="lazy">
-                        </div>
+                        </div> -->
                         <div class="swiper-slide gallery-swiper-slide" data-swiper-autoplay="2000">
                             <img class="gallery_img" src="./img/gallery/gallery_10.jpg" alt="gallery_10" loading="lazy">
                         </div>
@@ -285,49 +545,53 @@
                 </div>
             </div>
       </section>
-      <section class="question" id="question">
-          <h2>Популярные вопросы</h2>
+      <section class="question" >
           <div class="container">
+            <h2>Популярные вопросы</h2>
               <div class="question_cont _anim_items _anim_no_hide">
                     <div class="questions-item">
                         <button class="questions_top">
-                        Когда следует идти на консультацию к косметологу?<span>&#8743;</span>
+                        Что такое за технолгия HydraFacial
                         </button>
                         <div class="questions_bottom">
-                            Записаться на консультацию по косметологии рекомендуется всем для профилактики. Желательно посещать специалиста хотя бы ежегодно до 25 лет и минимум дважды в год после. Чем более регулярной будет упредительная консультация, тем реже она потребуется. Вразрез с распространенным мнением, ни один грамотный врач косметолог не станет назначать консультацию чаще, чем она объективно требуется пациенту.
+                            За один короткий и расслабляющий визит к косметологу Вы получяете целый комплекс процедур. Одновременно обеспечиваются глубокая чистка, увлажение, антивозрастоной уход и при необходомости, лечение проблемной кожи (акне, пигментации). Результат не заставить себя ждать - свежесть и сияние Вашего лица заметны сразу! При этом наблюдаеться накопительный эффект: после окончяние курса процедур (обычно это 4-5 сеасов) кожа становится все лучше и лучше. Главный секрет - уникальный одноразовые насадки HydroPell выполенные по запатентованной технологии Vorte-Fusion. Они эффектевно очищяют кожу, одновременно насыщая ее мультифункциональными сыворотками с натуральными факторами роста, пептидами, аминокислотами и антиоксидантами. благодаря этому достигается выраженный омолаживающий результат.
                         </div>
                     </div>
                     <div class="questions-item">
                         <button class="questions_top">
-                        Что провоцирует старание кожи<span>&#8743;</span>
+                        Что такое фракционный RF-лифтинг
                         </button>
                         <div class="questions_bottom">
-                            Факторов, которые могут стать причиной старения кожи много. Это могут быть и не правильный образ жизни и питание, вредные привычки,перенесенные заболевания, бесконтрольный прием лекарственных средств, слишком частое пребывание на солнце или активное посещение соляриев. Также одной из ключевых причин преждевременного старения кожи является недостаточное количество влаги.
-                            Здоровый образ жизни, правильно организованный уход за кожей и регулярные профилактические визиты к косметологу помогут избежать преждевременного старения кожи и сохранят ее молодой и красивый вид.
+                            Эффективный безоперационный способ омоложения. Радиоволновой лифтинг с помощью электрического поля высоких частот предназначен для прогрева дермы, формирования подкожной прочной сети коллагеновых волокон, что предотвращает растяжение и потерю упругости. Именно так создается омолаживающий эффект RF-лифтинга. Всего за 20 минут Вы получите желаемый вид кожи. А в последующие полгода будут синтезироваться «молодые» волокна, продлевая результат на год вперед.
                         </div>
                     </div>
                     <div class="questions-item">
                         <button class="questions_top">
-                        Как сохранить молодость кожи?<span>&#8743;</span>
+                        Правда ли, что инъекции ботокса приводят к преждевременному старению? 
                         </button>
-                        <div class="questions_bottom">              
-                            Предупредить старение кожи и появление морщин можно совмещая домашний и профессиональный уход. При этом начинать нужно уже с юного возраста. По совету косметолога можно использовать легкие крема, которые он подберет в соответствии с особенностями и типом вашей кожи. Также нужно для себя сделать правилом каждый день утром и вечером очищать лицо и никогда не ложиться спать не сняв косметику.
+                        <div class="questions_bottom">
+                            Инъекции ботокса к преждевременному старению не приведут. Человек продолжает стариться с момента рождения. Ботокс устраняет мимические морщинки, и, если есть показания (морщинки только стали появляться), можно начинать делать инъекции, пока не образовались заломы.
                         </div>
                     </div>
                     <div class="questions-item">
                         <button class="questions_top">
-                        Как сохранить молодость кожи?<span>&#8743;</span>
+                            Если перестать делать косметологические процедуры, эффект пропадет?
                         </button>
-                        <div class="questions_bottom">              
-                            Предупредить старение кожи и появление морщин можно совмещая домашний и профессиональный уход. При этом начинать нужно уже с юного возраста. По совету косметолога можно использовать легкие крема, которые он подберет в соответствии с особенностями и типом вашей кожи. Также нужно для себя сделать правилом каждый день утром и вечером очищать лицо и никогда не ложиться спать не сняв косметику.
+                        <div class="questions_bottom">         К сожалению, в косметологии нет волшебной таблетки, которая смогла бы раз и навсегда решить все проблемы пациентов. С помощью косметологических процедур мы можем приостановить и замедлить естественные процессы старения. Если вы перестанете обращаться к косметологу, то ваша кожа точно не станет хуже и не вернется в изначальное состояние, но естественные процессы старения продолжатся.
                         </div>
                     </div>
                     <div class="questions-item">
                         <button class="questions_top">
-                            Как сохранить молодость кожи?<span>&#8743;</span>
+                            Чем эпиляция отличается от депиляции?
                         </button>
-                        <div class="questions_bottom">              
-                            Предупредить старение кожи и появление морщин можно совмещая домашний и профессиональный уход. При этом начинать нужно уже с юного возраста. По совету косметолога можно использовать легкие крема, которые он подберет в соответствии с особенностями и типом вашей кожи. Также нужно для себя сделать правилом каждый день утром и вечером очищать лицо и никогда не ложиться спать не сняв косметику.
+                        <div class="questions_bottom">         Эпиляция – это удаление волоса вместе с фолликулом, из которого он растет. Если фолликул повреждается, то волос перестает расти.<br>Депиляция – это удаление верхней части волоса, не затрагивающее глубинных процессов роста волос. К ней относятся выщипывание, бритье, биоэпиляция, использование электроэпиляторов и кремов-депиляторов.
+                        </div>
+                    </div>
+                    <div class="questions-item">
+                        <button class="questions_top">
+                            На сколько лет получится стать «моложе» в кабинете врача-косметолога? 
+                        </button>
+                        <div class="questions_bottom">         Это напрямую зависит от образа жизни и наличия вредных привычек. Стрессы, недосып, алкоголь, курение — эти факторы влияют на состояние мягких тканей и процесс старения. Квалификация доктора и тип лица также играют немаловажную роль. Даже при самом хорошем раскладе 25 лет после похода к косметологу сбросить невозможно. Однако выглядеть моложе после процедур на 5-10 лет вполне реально. 
                         </div>
                     </div>
               </div>
@@ -344,30 +608,118 @@
                     </div>
                     <div class="counter_item _anim_items _anim_no_hide">
                         <img src="./img/counter/counter_1.png" alt="counter_1" width="150px" loading="lazy">
-                        <span class="countre" data-tager="164">0</span>
+                        <span class="countre" data-tager="842">0</span>
                         <p>Довольных клиентов</p>
                     </div>
                     <div class="counter_item _anim_items _anim_no_hide">
                         <img src="./img/counter/counter_2.png" alt="counter_2" width="150px" loading="lazy">
-                        <span class="countre" data-tager="342">0</span>
+                        <span class="countre" data-tager="1795">0</span>
                         <p>Процедуры</p>
+                    </div>
+                    <div class="counter_item _anim_items _anim_no_hide">
+                        <img src="./img/icon/icon_4.png" alt="counter_4" width="150px" loading="lazy">
+                        <span class="countre" data-tager="7878">0</span>
+                        <p>Подпищиков в Instagram</p>
                     </div>
                 </div>
             </div>
       </section>
+      <section class="brand">
+          <div class="container">
+              <div class="brand_cont">
+                <h2>Наши партнеры</h2>
+                <div class="swiper brand-slider">
+                    <div class="swiper-wrapper swiper-wrapper-brand">
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_1.png" alt="brand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_2.png" alt="brand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_3.png" alt="brand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_4.png" alt="brand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_5.png" alt="brand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_6.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_7.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_8.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_9.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_10.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_11.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_12.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_13.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                        <div class="swiper-slide swiper-slide-brand" data-swiper-autoplay="2000">
+                            <img src="./img/brand/brand_14.png" alt="btand"
+                            width="200px"  height="170px" loading="lazy">
+                        </div>
+                </div>
+                    <div class="swiper-pagination swiper-pagination-brand"></div>
+                  </div>
+                  
+              </div>
+          </div>
+
+      </section>
+      <section class="insta">
+        <div class="container">
+            <h2>Наш Instagram</h2>
+            <div class="insta_cont main_cont _anim_items _anim_no_hide">
+                <p>В инстаграме мы делимся своими работами, жизнью студии и лайфхаками по уходу за кожей. Присоединяйтесь</p>
+                <a href="https://www.instagram.com/elixir.salon.kiev/" target="_blank"><img src="./img/icon/icon_4.png" alt="insta"   loading='lazy' width="150px"></a>
+                <a href="https://www.instagram.com/elixir.salon.kiev/" target="_blank"  class="btn_inta btn">Подписатья</a>
+            </div>
+        </div>
+    </section>
   </main>
 <footer>
-    <section class="feedback" id="feedback">
+    <section class="feedback" >
         <div class="container">
-            <h2>Связаться с нами или записаться на прием</h2>
+            <h2 id="feedback">Связаться с нами или записаться на прием</h2>
             <div class="feedback_cont">
                 <div class="feedback_block">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="number" placeholder="Номер телефона">
-                    <textarea type="text" name="massage" placeholder='Ваше сообщение (не обязательно).' rows="5" cols="33"></textarea>
+                    <input type="text" placeholder="Ваше имя" class="input_name">
+                    <input type="number" placeholder="Номер телефона" class="input_phone">
+                    <textarea type="text" name="massage" placeholder='Ваше сообщение (не обязательно).' rows="5" cols="33" class="feedback_message input_message"></textarea>
+                    <div class="feedback-button">
+                        <button class="inpit_button btn">Отправить</button>
+                    </div>
                 </div>
                 <div class="feedback_other">
-                    <p>А так же можете нам позвонить по номереру <a href="tel:09600">0966111111</a> или написать в <a href="">Viber</a>.</p>
+                    <p>А так же можете нам позвонить по номереру <a href="tel:380674037155">+380674037155</a> или написать в <a href="viber://add?number=380674037155">Viber</a>.</p>
                 </div>
             </div>
         </div>
@@ -378,18 +730,51 @@
             <div class="footer_cont">
                 <div class="footer_block">
                     <div class="footer_item">
-                        <h4>Время работы:</h4>
-                        <p>Каждый день с 09:00 - 20:00</p>
-                        <p>Без перерыва и выходных</p>
+                        <div class="footer_item_top">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-clock'></use>
+                            </svg>
+                            <h4>Время работы:</h4>
+                        </div>
+                        <p>Понедельник - выходной</p>
+                        <p>Вторник - 09:00 - 20:00</p>
+                        <p>Стеда - 09:00 - 20:00</p>
+                        <p>Четверг - 09:00 - 20:00</p>
+                        <p>Пятница - 09:00 - 20:00</p>
+                        <p>Суббота - 09:00 - 20:00</p>
+                        <p>Воскресенье - выходной</p>
                     </div>
                     <div class="footer_item">
-                        <h4>Адрес:</h4>
+                        <div class="footer_item_top">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-location'></use>
+                            </svg>
+                            <h4>Адрес:</h4>
+                        </div>
                         <p>Киев, пр-т Мира, 9а</p>
                     </div>
                     <div class="footer_item">
-                        <h4>Телефоны:</h4>
-                        <p>Тел: <a href="">09661111111</a></p>
-                        <p>Viber: <a href="">09661111111</a></p>
+                        <div class="footer_item_top">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-phone'></use>
+                            </svg>
+                            <h4>Связь:</h4>
+                        </div>
+                        <p class="footer_item_cont"> 
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                                <use href='./img/icon/symbol-defs.svg#icon-phone'></use>
+                            </svg>
+                            <a href="tel:380674037155">+380674037155</a></p>
+                        <p class="footer_item_cont">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                            <use href='./img/icon/symbol-defs.svg#icon-viber_logo_icon_144761'></use>
+                            </svg>
+                            <a href="viber://add?number=380674037155" target="blank">+380674037155</a></p>
+                        <p class="footer_item_cont">
+                            <svg class="icon symbol-defs" width="25px" height="25px">
+                            <use href='./img/icon/symbol-defs.svg#icon-instagram'></use>
+                            </svg>
+                            <a href="https://www.instagram.com/elixir.salon.kiev/" target="blank">@elixir.salon.kiev</a></p>
                     </div>
                 </div>
                 <div class="footer_map">
