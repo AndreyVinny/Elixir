@@ -355,6 +355,7 @@ template {
   --color-spec-7:#fcfcfc;
   --color-spec-8:#d1d1d1;
   --color-spec-9:#131313;
+  --color-spec-10:#0c7011;
 }
 
 .dark {
@@ -364,12 +365,13 @@ template {
   --color-spec-1:#232422;
   --color-spec-2:#0c7011;
   --color-spec-3:#161616;
-  --color-spec-4:rgba(224, 247, 195, 0.8);
+  --color-spec-4:rgba(42, 44, 38, 0.8);
   --color-spec-5:#A3BB75;
   --color-spec-6:#efefef;
   --color-spec-7:#929292;
   --color-spec-8:#636363;
   --color-spec-9:#133c06;
+  --color-spec-10:#043806;
 }
 
 * {
@@ -621,6 +623,10 @@ h2 {
       -ms-transform: rotate(0.9turn);
           transform: rotate(0.9turn);
   color: var(--color-spec-2);
+}
+
+body.dark .dark_mode::before {
+  content: "☀";
 }
 
 .banner {
@@ -1348,7 +1354,7 @@ h2 {
 }
 @media (max-width: 720px) {
   .master_cont {
-    height: 470px;
+    height: 500px;
   }
 
   .master-wrapper {
@@ -1453,7 +1459,7 @@ h2 {
   background-color: var(--color-text-1);
   color: var(--color-text-3);
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   text-align: left;
   letter-spacing: 1.5px;
@@ -1462,7 +1468,7 @@ h2 {
   transition: all 0.5s;
 }
 .questions_top:hover {
-  background-color: var(--color-spec-2);
+  background-color: var(--color-spec-10);
   color: var(--color-text-1);
 }
 .questions_top:after {
@@ -1477,10 +1483,10 @@ h2 {
 
 .questions_top.active {
   background-color: var(--color-text-1);
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 .questions_top.active:hover {
-  background-color: var(--color-spec-2);
+  background-color: var(--color-spec-10);
   color: var(--color-text-1);
 }
 .questions_top.active::after {
@@ -1519,9 +1525,20 @@ h2 {
   padding: 15px 30px;
   max-height: 500px;
   overflow: hidden;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 15px 15px;
 }
 
+@media (max-width: 720px) {
+  .questions_bottom.active {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 420px) {
+  .questions_bottom.active {
+    padding: 10px 10px;
+    max-height: 700px;
+  }
+}
 .counter {
   background-color: var(--color-text-1);
 }
@@ -1997,7 +2014,7 @@ h2 {
 .price_top {
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 15px 30px;
   background-color: var(--color-text-1);
   border: none;
   cursor: pointer;
@@ -2011,35 +2028,43 @@ h2 {
 }
 .price_top:after {
   position: absolute;
-  top: 9px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 20px;
   content: "+";
 }
 .price_top:hover {
-  background-color: var(--color-spec-2);
+  background-color: var(--color-spec-10);
   color: var(--color-text-1);
 }
 .price_top:hover:after {
   content: "‹";
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  right: 28px;
+  -webkit-transform: rotate(-90deg) translateX(150%);
+      -ms-transform: rotate(-90deg) translateX(150%);
+          transform: rotate(-90deg) translateX(150%);
+  top: 50%;
+  right: 26px;
 }
 
 .price_top.active {
   border-radius: 15px 15px 0px 0px;
 }
 .price_top.active:after {
-  position: absolute;
-  right: 20px;
   content: "−";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .price_top.active:hover:after {
+  top: 50%;
+  right: 20px;
   content: "‹";
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(90deg) translateX(-150%);
+      -ms-transform: rotate(90deg) translateX(-150%);
+          transform: rotate(90deg) translateX(-150%);
 }
 
 .price_bottom {

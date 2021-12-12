@@ -1,16 +1,17 @@
 :root {
-  --color-text-1:#fff;
-  --color-text-2:#78A328;
-  --color-text-3:#222222;
-  --color-spec-1:#c5f682;
-  --color-spec-2:#0c7011;
-  --color-spec-3:#cefa7c;
-  --color-spec-4:rgba(224, 247, 195, 0.8);
-  --color-spec-5:#A3BB75;
-  --color-spec-6:#efefef;
-  --color-spec-7:#fcfcfc;
-  --color-spec-8:#d1d1d1;
-  --color-spec-9:#131313;
+    --color-text-1:#fff;
+    --color-text-2:#78A328;
+    --color-text-3:#222222;
+    --color-spec-1:#c5f682;
+    --color-spec-2:#0c7011;
+    --color-spec-3:#cefa7c;
+    --color-spec-4:rgba(224, 247, 195, 0.8);
+    --color-spec-5:#A3BB75;
+    --color-spec-6:#efefef;
+    --color-spec-7:#fcfcfc;
+    --color-spec-8:#d1d1d1;
+    --color-spec-9:#131313;
+    --color-spec-10:#0c7011;
 }
 
 .dark {
@@ -20,12 +21,13 @@
     --color-spec-1:#232422;
     --color-spec-2:#0c7011;
     --color-spec-3:#161616;
-    --color-spec-4:rgba(224, 247, 195, 0.8);
+    --color-spec-4:rgba(42, 44, 38, 0.8);
     --color-spec-5:#A3BB75;
     --color-spec-6:#efefef;
     --color-spec-7:#929292;
     --color-spec-8:#636363;
     --color-spec-9:#133c06;
+    --color-spec-10:#043806;
 }
 
 * {

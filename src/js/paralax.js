@@ -4,17 +4,17 @@ var parallaxInstance = new Parallax(text);
      var parallaxInstance = new Parallax(scane);
 
       let icon1 = document.getElementById('icon1');
-              let icon2 = document.getElementById('icon2');
-              let icon3 = document.getElementById('icon3');
-              let icon4 = document.getElementById('icon4');
-              let icon5 = document.getElementById('icon5');
-              let icon6 = document.getElementById('icon6');
-              let icon7 = document.getElementById('icon7');
-              let icon8 = document.getElementById('icon8');
+      let icon2 = document.getElementById('icon2');
+      let icon3 = document.getElementById('icon3');
+      let icon4 = document.getElementById('icon4');
+      let icon5 = document.getElementById('icon5');
+      let icon6 = document.getElementById('icon6');
+      let icon7 = document.getElementById('icon7');
+      let icon8 = document.getElementById('icon8');
 
-              window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function(){
 
-              value = window.scrollY;
+            value = window.scrollY;
 
               icon1.style.top = -value * 0.5 + 'px';
               icon2.style.left = -value * 0.5 + 'px';
