@@ -27,7 +27,7 @@
 .price_top {
     position: relative;
     width: 100%;
-    padding: 10px;
+    padding: 15px 30px;
     background-color: var(--color-text-1);
     border: none;
     cursor: pointer;
@@ -37,31 +37,35 @@
     font-size: 22px;
     &:after {
         position: absolute;
-        top: 9px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 20px;
         content: '\002B';
     }
     &:hover {
-        background-color: var(--color-spec-2);
+        background-color: var(--color-spec-10);
         color: var(--color-text-1);
     }
     &:hover:after {
         content: '\2039';
-        transform: rotate(-90deg);
-        right: 28px;
+        transform: rotate(-90deg) translateX(150%);
+        top: 50%;
+        right: 26px;
     }
 }
 
 .price_top.active {
     border-radius: 15px 15px 0px 0px;
     &:after {
-        position: absolute;
-        right: 20px;
         content: '\2212';
+        top: 50%;
+        transform: translateY(-50%);
     }
     &:hover:after {
+        top: 50%;
+        right: 20px;
         content: '\2039';
-        transform: rotate(90deg);
+        transform: rotate(90deg) translateX(-150%);
     }
 }
 
