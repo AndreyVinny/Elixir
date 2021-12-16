@@ -55,10 +55,6 @@ const swiper_master = new Swiper('.master-slider', {
     el: '.swiper-pagination-master',
     clickable: true,
   },
-  keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -87,13 +83,6 @@ const swiper_gallery = new Swiper('.gallery-slider', {
   pagination: {
     el: '.swiper-pagination-gallery',
     clickable: true,
-  },
-  keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-  },
-  mousewheel: {
-      sensitivity: 1,
   },
   autoplay: {
     delay: 5000,
@@ -130,10 +119,6 @@ const swiper = new Swiper('.brand-slider', {
     pagination: {
       el: '.swiper-pagination-brand',
       clickable: true,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
     },
     autoplay: {
       delay: 5000,
@@ -288,7 +273,9 @@ darkModeToggle.addEventListener('click', () => {
 });
 const loader = document.querySelector('.load');
 
-window.addEventListener('load', () => {
+function load () {
     loader.classList.add('hidden');
-});
+}
+
+setTimeout(load, 2000);;
 
