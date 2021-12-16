@@ -1,7 +1,5 @@
 const loader = document.querySelector('.load');
 
-function load () {
+window.addEventListener('load', () => {
     loader.classList.add('hidden');
-}
-
-setTimeout(load, 2000);
+})

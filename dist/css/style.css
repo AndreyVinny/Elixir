@@ -2113,7 +2113,7 @@ body.dark .dark_mode::before {
 }
 
 .price_bottom.active {
-  max-height: 600px;
+  max-height: 620px;
   overflow: hidden;
   border-radius: 0px 0px 15px 15px;
   -webkit-box-shadow: 7px 12px 8px 0px rgba(34, 60, 80, 0.2);
