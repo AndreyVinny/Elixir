@@ -356,6 +356,7 @@ template {
   --color-spec-8:#d1d1d1;
   --color-spec-9:#131313;
   --color-spec-10:#0c7011;
+  --color-spec-11:#bb3434;
 }
 
 .dark {
@@ -372,6 +373,7 @@ template {
   --color-spec-8:#636363;
   --color-spec-9:#133c06;
   --color-spec-10:#043806;
+  --color-spec-11:#790606;
 }
 
 * {
@@ -1091,7 +1093,7 @@ body.dark .dark_mode::before {
   width: 48%;
 }
 .about_block p {
-  margin-top: 25px;
+  margin-top: 10px;
   letter-spacing: 2px;
   line-height: 20px;
 }
@@ -1110,10 +1112,6 @@ body.dark .dark_mode::before {
   list-style-type: circle;
   letter-spacing: 2px;
   line-height: 20px;
-}
-
-.about_img_hidden {
-  display: none;
 }
 
 .about_text {
@@ -2094,10 +2092,10 @@ body.dark .dark_mode::before {
   position: relative;
 }
 .price_bottom .price_bottom_item:nth-child(2n) {
-  background-color: var(--color-spec-8);
+  background-color: var(--color-spec-7);
 }
 .price_bottom .price_bottom_item:nth-child(2n+1) {
-  background-color: var(--color-spec-7);
+  background-color: var(--color-spec-8);
 }
 .price_bottom .price_bottom_item p:first-child {
   width: 78%;
@@ -2105,6 +2103,13 @@ body.dark .dark_mode::before {
 .price_bottom .price_bottom_item p:last-child {
   text-align: right;
   width: 22%;
+}
+
+.price_bottom_item_info {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: var(--color-spec-11);
+  color: var(--color-spec-6);
 }
 
 .price_bottom.active {
