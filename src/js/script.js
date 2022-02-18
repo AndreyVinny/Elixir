@@ -8,4 +8,5 @@
 @@include('animation.js');
 @@include('darkMode.js');
 @@include('load.js');
+@@include('langs.js');
 

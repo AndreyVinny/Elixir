@@ -25,16 +25,32 @@
     svg {
         fill: var(--color-spec-2);
     }
+    span {
+        font-size: 20px;
+        color: var(--color-spec-2);
+
+    }
 }
 
 .contact_block:hover a {
-    color: var(--color-text-2);;
+    color: var(--color-text-2);
 }
 .contact_block:hover svg {
-    fill: var(--color-text-2);;
+    fill: var(--color-text-2);
 }
 
-@media (max-width: $mobile) {
+.change-lang {
+    background-color: inherit;
+    border: none;
+    color: var(--color-text-2);
+    appearance: none;
+    font-size: 20px;
+    margin-left: 5px;
+
+
+}
+
+@media (max-width: $tablet) {
     .contact_cont {
         @include flex (column, center, center, nowrap);
     }

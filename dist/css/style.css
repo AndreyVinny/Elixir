@@ -885,6 +885,10 @@ body.dark .dark_mode::before {
 .contact_block svg {
   fill: var(--color-spec-2);
 }
+.contact_block span {
+  font-size: 20px;
+  color: var(--color-spec-2);
+}
 
 .contact_block:hover a {
   color: var(--color-text-2);
@@ -894,7 +898,18 @@ body.dark .dark_mode::before {
   fill: var(--color-text-2);
 }
 
-@media (max-width: 420px) {
+.change-lang {
+  background-color: inherit;
+  border: none;
+  color: var(--color-text-2);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+@media (max-width: 720px) {
   .contact_cont {
     display: -webkit-box;
     display: -ms-flexbox;
